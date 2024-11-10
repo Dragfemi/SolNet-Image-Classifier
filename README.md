@@ -12,9 +12,6 @@ Plotting: Utilizes matplotlib to plot the accuracy and loss values across epochs
 Usage:
 Run evaluate.py as a standalone script to view the accuracy and loss plots:
 
-bash
-Copy code
-python evaluate.py
 2. model.py
 This script defines the architecture of the SolNet model, a custom convolutional neural network (CNN) for binary image classification. The model uses several convolutional, pooling, normalization, and dense layers to achieve feature extraction and classification.
 
@@ -30,9 +27,6 @@ Model Saving: Saves the constructed model as solnet.hdf5.
 Usage:
 The model can be built and saved by running model.py as a standalone script:
 
-bash
-Copy code
-python model.py
 3. train.py
 This script handles training the SolNet model on a dataset of labeled images, including steps for loading data, training the model, and saving training metrics to a JSON file for later evaluation.
 
@@ -44,9 +38,6 @@ Model Saving: Saves the trained model weights and configuration to solnet.hdf5.
 Usage:
 Run train.py to train the model on your dataset:
 
-bash
-Copy code
-python train.py
 4. history.json
 This file stores the training history, including metrics for each epoch. It contains:
 
@@ -55,3 +46,4 @@ loss: List of training loss values per epoch.
 val_acc: Validation accuracy per epoch, used to evaluate generalization.
 val_loss: Validation loss per epoch, tracking how well the model generalizes to unseen data.
 The evaluate.py script reads this file to generate accuracy and loss plots, aiding in model evaluation.
+

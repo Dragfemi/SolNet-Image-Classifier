@@ -11,7 +11,7 @@ import json
 
 def train():
     batch_size = 32
-    location = r"C:\Users\Racool\Desktop\femi project\dataset"
+    location = "\dataset"
     label_mode = 'binary'
     seed = 10  # Changed for each fold made manually
     epochs = 30
